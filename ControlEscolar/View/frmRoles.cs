@@ -22,17 +22,5 @@ namespace ControlEscolar.View
         {
           
         }
-            //Cambio 3 en roles 
-        }
-            //Cambio 3 en roles 
-        }
-            //Cambio 3 en roles 
-        }
-            //Cambio 3 en roles 
-        }
-            //Cambio 3 en roles 
-        }
-            //Cambio 3 en roles 
-        }
     }
 }
