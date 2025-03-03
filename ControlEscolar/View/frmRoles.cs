@@ -17,5 +17,22 @@ namespace ControlEscolar.View
             InitializeComponent();
             Formas.InicializaForma(this, parent);
         }
+
+        private void frmRoles_Load(object sender, EventArgs e)
+        {
+          
+        }
+            //Cambio 3 en roles 
+        }
+            //Cambio 3 en roles 
+        }
+            //Cambio 3 en roles 
+        }
+            //Cambio 3 en roles 
+        }
+            //Cambio 3 en roles 
+        }
+            //Cambio 3 en roles 
+        }
     }
 }
