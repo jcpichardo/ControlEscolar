@@ -25,39 +25,39 @@ namespace ControlEscolar.View
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrWhiteSpace(txtUsuario.Text))
-            {
-                MessageBox.Show("El campo de usuario no puede estar vacío.", "Información del sistema", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return;
-            }
+            //if (string.IsNullOrWhiteSpace(txtUsuario.Text))
+            //{
+            //    MessageBox.Show("El campo de usuario no puede estar vacío.", "Información del sistema", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            //    return;
+            //}
 
-            if (string.IsNullOrWhiteSpace(txtContraseña.Text))
-            {
-                MessageBox.Show("El campo de contraseña no puede estar vacío.", "Información del sistema", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                return;
-            }
+            //if (string.IsNullOrWhiteSpace(txtContraseña.Text))
+            //{
+            //    MessageBox.Show("El campo de contraseña no puede estar vacío.", "Información del sistema", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            //    return;
+            //}
 
-            if (!UsuariosNegocio.EsFormatoValido(txtUsuario.Text))
-            {
-                MessageBox.Show("El nombre de usuario no tiene un formato correcto.", "Información del sistema", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                return;
-            }
+            //if (!UsuariosNegocio.EsFormatoValido(txtUsuario.Text))
+            //{
+            //    MessageBox.Show("El nombre de usuario no tiene un formato correcto.", "Información del sistema", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            //    return;
+            //}
 
             //MessageBox.Show("Listo para iniciar sesión.", "Información del sistema", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
 
             //Estamos listos para iniciar sesión en proximas clases, por lo pronto simplemente ocultamos la ventana de login y mostramos el MDI
-            this.Close();
-            MDI_Control_escolar mdi = new MDI_Control_escolar();
-            mdi.Show();
+            //this.Close();
+            //MDI_Control_escolar mdi = new MDI_Control_escolar();
+            //mdi.Show();
 
             #region Comentarios adicionales
             //OJO, ¿QUE PASA CON EL PROYECTO, POR NO SE TERMINO DE EJECUTAR AL SALIR?
             #endregion
 
             #region Solución a los comentarios
-            //this.DialogResult = DialogResult.OK;
-            //this.Close();
+            this.DialogResult = DialogResult.OK;
+            this.Close();
             #endregion
 
 

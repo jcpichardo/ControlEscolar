@@ -28,16 +28,13 @@ namespace ControlEscolar
             Application.SetCompatibleTextRenderingDefault(false);
 
             //Inicia la aplicación con la ventana de inicio
-            Application.Run(new View.frmLogin());
+            //Application.Run(new View.frmLogin());
 
-            //frmLogin login_form = new frmLogin();
-            //if (login_form.ShowDialog() == DialogResult.OK)
-            //{
-            //    Application.Run(new MDI_Control_escolar());
-            //}
-
-
-
+            frmLogin login_form = new frmLogin();
+            if (login_form.ShowDialog() == DialogResult.OK)
+            {
+                Application.Run(new MDI_Control_escolar());
+            }
         }
     }
 }

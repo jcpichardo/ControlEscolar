@@ -14,5 +14,10 @@ namespace ControlEscolar.Utilities
             string patron = @"^[^@\s]+@[^@\s]+\.[^@\s]+$";
             return Regex.IsMatch(correo, patron);
         }
+        public static bool EsCURPValido(string curp)
+        {
+            string patron = @"^[A-Z]{4}\d{6}[HM][A-Z]{5}\d{2}$";
+            return Regex.IsMatch(curp, patron);
+        }
     }
 }

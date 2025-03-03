@@ -18,5 +18,10 @@ namespace ControlEscolar.View
             InitializeComponent();
             Formas.InicializaForma(this, parent);
         }
+
+        private void frmUsuarios_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

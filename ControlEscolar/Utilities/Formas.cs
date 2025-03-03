@@ -27,7 +27,7 @@ namespace ControlEscolar.Utilities
 
             //Propiedades de tamaño
             form_child.AutoScaleMode = AutoScaleMode.Font;  // Modo de escalado
-            form_child.ClientSize = new Size(800, 600);  // Tamaño inicial
+            form_child.ClientSize = new Size(1028, 768);  // Tamaño inicial
             form_child.MinimumSize = new Size(400, 300);  // Tamaño mínimo permitido
             form_child.MaximumSize = new Size(3440, 1440);  // Tamaño máximo permitido
 
