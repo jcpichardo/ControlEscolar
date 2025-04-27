@@ -34,6 +34,7 @@ namespace ControlEscolar.View
 
         private void usuariosToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            
             AbreVentanaHija("frmusuarios");
         }
 

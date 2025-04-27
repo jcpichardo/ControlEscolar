@@ -5,11 +5,20 @@ using System.Diagnostics.Eventing.Reader;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using NLog;
+using ControlEscolar.Utilities;
+using System.IO;
+using OfficeOpenXml;
 
 namespace ControlEscolar
 {
+
+
     static class Program
     {
+        // Logger para el programa principal
+        private static Logger? _logger;
+
         /// <summary>
         /// STA (Single-Threaded Apartment) es un modelo de subprocesos (threads) 
         /// usado en COM (Component Object Model)
@@ -19,6 +28,13 @@ namespace ControlEscolar
         [STAThread]
         static void Main()
         {
+
+            ExcelPackage.License.SetNonCommercialOrganization("My Noncommercial organization");
+
+            // Inicializar el sistema de logging
+            _logger = LoggingManager.GetLogger("ControlEscolar.Program");
+            _logger.Info("Aplicación iniciada");
+
             //Activa los estilos visuales modernos de Windows
             // Sin esta línea, los controles como botones,
             // cuadros de texto y pestañas se verán con el estilo antiguo de Windows 95/98.
