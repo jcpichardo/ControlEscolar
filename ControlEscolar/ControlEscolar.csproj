@@ -9,10 +9,14 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="EPPlus" Version="8.0.2" />
+    <PackageReference Include="EPPlus" Version="8.0.3" />
     <PackageReference Include="FontAwesome.Sharp" Version="6.6.0" />
     <PackageReference Include="NLog" Version="5.4.0" />
     <PackageReference Include="Npgsql" Version="9.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ControlEscolarCore\ControlEscolarCore.csproj" />
   </ItemGroup>
 
   <ItemGroup>
@@ -28,13 +32,6 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Data\DatabaseScripts\Functions\" />
-    <Folder Include="Data\DatabaseScripts\Tables\" />
-    <Folder Include="Data\DatabaseScripts\Views\" />
-    <Folder Include="Data\DatabaseScripts\StoredProcedures\" />
   </ItemGroup>
 
 </Project>

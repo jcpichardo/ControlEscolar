@@ -1,14 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
 using NLog;
-using ControlEscolar.Data;
-using ControlEscolar.Utilities;
-using ControlEscolar.Model;
+using ControlEscolarCore.Data;
+using ControlEscolarCore.Utilities;
+using ControlEscolarCore.Model;
 
 //#Excel
 using OfficeOpenXml; // Necesitas instalar el paquete EPPlus vía NuGet
 
-namespace ControlEscolar.Controller
+namespace ControlEscolarCore.Controller
 {
     public class EstudiantesController
     {

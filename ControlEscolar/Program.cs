@@ -32,8 +32,8 @@ namespace ControlEscolar
             ExcelPackage.License.SetNonCommercialOrganization("My Noncommercial organization");
 
             // Inicializar el sistema de logging
-            _logger = LoggingManager.GetLogger("ControlEscolar.Program");
-            _logger.Info("Aplicación iniciada");
+            //_logger = LoggingManager.GetLogger("ControlEscolar.Program");
+            //_logger.Info("Aplicación iniciada");
 
             //Activa los estilos visuales modernos de Windows
             // Sin esta línea, los controles como botones,

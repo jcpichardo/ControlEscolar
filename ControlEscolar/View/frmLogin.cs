@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using ControlEscolar.Bussines;
+using ControlEscolarCore.Bussines;
 using ControlEscolar.Utilities;
 using NLog;
 
@@ -15,7 +15,7 @@ namespace ControlEscolar.View
 {
     public partial class frmLogin : Form
     {
-        private static readonly Logger _logger = LoggingManager.GetLogger("ControlEscolar.View.frmLogin");
+        //private static readonly Logger _logger = LoggingManager.GetLogger("ControlEscolar.View.frmLogin");
 
 
         public frmLogin()
@@ -70,8 +70,8 @@ namespace ControlEscolar.View
 
         private void Login_Load(object sender, EventArgs e)
         {
-            _logger.Info("Usuario accedio ha iniciar sesión");
-            _logger.Warn("Espacio en disco bajo");
+            //_logger.Info("Usuario accedio ha iniciar sesión");
+            //_logger.Warn("Espacio en disco bajo");
             try
             {
                 // Aquí provocamos una primera excepción
@@ -89,12 +89,12 @@ namespace ControlEscolar.View
             catch (Exception ex)
             {
                 // Aquí puedes manejar la excepción que contiene la inner exception
-                _logger.Error(ex, "Se produjo un error en la operación");
+                //_logger.Error(ex, "Se produjo un error en la operación");
 
                 // O registrar específicamente usando la inner exception
                 if (ex.InnerException != null)
                 {
-                    _logger.Fatal(ex, $"Error crítico con detalle interno: {ex.InnerException.Message}");
+                  //  _logger.Fatal(ex, $"Error crítico con detalle interno: {ex.InnerException.Message}");
                 }
             }
         }

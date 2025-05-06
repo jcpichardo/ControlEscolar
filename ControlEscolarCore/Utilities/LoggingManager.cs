@@ -1,12 +1,12 @@
 ﻿using System;
 using System.Diagnostics;
 using System.IO;
-using Microsoft.VisualBasic.Logging;
+//using Microsoft.VisualBasic.Logging;
 using NLog;
 using NLog.Config;
 using NLog.Targets;
 
-namespace ControlEscolar.Utilities
+namespace ControlEscolarCore.Utilities
 {
     /// <summary>
     /// Clase utilitaria para configurar y manejar el logging en el proyecto.

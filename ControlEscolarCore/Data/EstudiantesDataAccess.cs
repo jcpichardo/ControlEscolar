@@ -4,10 +4,10 @@ using System.Data;
 using Npgsql;
 using NpgsqlTypes;
 using NLog;
-using ControlEscolar.Utilities;
-using ControlEscolar.Model;
+using ControlEscolarCore.Utilities;
+using ControlEscolarCore.Model;
 
-namespace ControlEscolar.Data
+namespace ControlEscolarCore.Data
 {
     /// <summary>
     /// Clase que maneja las operaciones de acceso a datos para la entidad Estudiantes

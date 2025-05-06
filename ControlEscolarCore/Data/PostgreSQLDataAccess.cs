@@ -3,9 +3,9 @@ using System.Data;
 using System.Configuration;
 using Npgsql;
 using NLog;
-using ControlEscolar.Utilities;
+using ControlEscolarCore.Utilities;
 
-namespace ControlEscolar.Data
+namespace ControlEscolarCore.Data
 {
     /// <summary>
     /// Clase que maneja el acceso a datos PostgreSQL, incluyendo conexiones, consultas, 

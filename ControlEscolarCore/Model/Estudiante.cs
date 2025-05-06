@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ControlEscolar.Model
+namespace ControlEscolarCore.Model
 {
     /// <summary>
     /// Modelo que representa a un estudiante en el sistema de control escolar.

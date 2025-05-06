@@ -4,17 +4,17 @@ using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
-using ControlEscolar.Utilities;
+using ControlEscolarCore.Utilities;
 
-namespace ControlEscolar.Bussines
+namespace ControlEscolarCore.Bussines
 {
-    internal class EstudiantesNegocio
+    public class EstudiantesNegocio
     {
-        internal static bool EsCorreoValido(string correo)
+        public static bool EsCorreoValido(string correo)
         {
             return Validaciones.EsCorreoValido(correo);
         }
-        internal static bool EsCURPValido(string curp)
+        public static bool EsCURPValido(string curp)
         {
             return Validaciones.EsCURPValido(curp);
         }
@@ -25,7 +25,7 @@ namespace ControlEscolar.Bussines
         /// </summary>
         /// <param name="nocontrol">No de control a validar</param>
         /// <returns>Retorna un verdadero o falso</returns>
-        internal static bool EsNoControlValido(string nocontrol)
+        public static bool EsNoControlValido(string nocontrol)
         {
             string patron = @"^(T|M)-\d{4}-\d{3,5}$";
             return Regex.IsMatch(nocontrol, patron);

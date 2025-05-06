@@ -8,9 +8,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using ControlEscolar.Utilities;
-using ControlEscolar.Bussines;
-using ControlEscolar.Controller;
-using ControlEscolar.Model;
+using ControlEscolarCore.Bussines;
+using ControlEscolarCore.Controller;
+using ControlEscolarCore.Model;
 
 namespace ControlEscolar.View
 {
