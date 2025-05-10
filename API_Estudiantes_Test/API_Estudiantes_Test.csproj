@@ -14,4 +14,4 @@
     <ProjectReference Include="..\ControlEscolarCore\ControlEscolarCore.csproj" />
   </ItemGroup>
 
-</Project>
+</Project> 
