@@ -31,7 +31,7 @@ namespace API_Estudiantes_Test
             [FromQuery] bool soloActivos = true,
             [FromQuery] int tipoFecha = 0,
             [FromQuery] DateTime? fechaInicio = null,
-            [FromQuery] DateTime? fechaFin = null)
+            [FromQuery] DateTime? fechaFin = null) 
         {
             try
             {
