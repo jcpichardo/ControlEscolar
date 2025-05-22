@@ -29,7 +29,7 @@ namespace ControlEscolarCore.Model
 
         /// <summary>
         /// Semestre o grado en el que está inscrito el estudiante
-        /// </summary>
+        /// </summary> 
         public string Semestre { get; set; }
 
         /// <summary>

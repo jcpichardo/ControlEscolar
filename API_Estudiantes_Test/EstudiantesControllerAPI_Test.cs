@@ -1,4 +1,5 @@
 ﻿using ControlEscolarCore.Controller;
+using ControlEscolarCore.Model;
 using Microsoft.AspNetCore.Mvc;
 
 
@@ -49,6 +50,31 @@ namespace API_Estudiantes_Test
                 return StatusCode(500, "Error interno del servidor" + ex.Message);
             }
         }
+
+        /// <summary>
+        /// Actualiza los datos de un estudiante existente.
+        /// </summary>
+        /// <param name="estudiante">Objeto Estudiante con los nuevos datos</param>
+        /// <returns>Resultado de la operación</returns>
+        [HttpPut("actualizar_estudiante")]
+        public IActionResult ActualizarEstudiante([FromBody] Estudiante estudiante)
+        {
+            try
+            {
+                var resultado = _estudiantesController.ActualizarEstudiante(estudiante);
+
+                if (resultado.exito)
+                    return Ok(new { mensaje = resultado.mensaje });
+                else
+                    return BadRequest(new { mensaje = resultado.mensaje });
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Error al actualizar estudiante");
+                return StatusCode(500, "Error interno del servidor: " + ex.Message);
+            }
+        }
+
 
 
     }
