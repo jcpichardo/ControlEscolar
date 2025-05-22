@@ -57,7 +57,7 @@ namespace API_Estudiantes_Test
         /// <param name="idestudiante">Identificador del estudiante</param>
         /// <returns>Resultado de la operación</returns>
         [HttpPut("actualizar_nombreestudiante")]
-        public IActionResult ActualizarEstudiante([FromBody]int idestudiante, [FromBody] string nuevo_nombre)
+        public IActionResult ActualizarEstudiante([FromQuery]int idestudiante, [FromQuery] string nuevo_nombre)
         {
             try
             {
