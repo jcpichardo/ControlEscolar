@@ -54,14 +54,14 @@ namespace API_Estudiantes_Test
         /// <summary>
         /// Actualiza los datos de un estudiante existente.
         /// </summary>
-        /// <param name="estudiante">Objeto Estudiante con los nuevos datos</param>
+        /// <param name="idestudiante">Identificador del estudiante</param>
         /// <returns>Resultado de la operación</returns>
-        [HttpPut("actualizar_estudiante")]
-        public IActionResult ActualizarEstudiante([FromBody] Estudiante estudiante)
+        [HttpPut("actualizar_nombreestudiante")]
+        public IActionResult ActualizarEstudiante([FromBody]int idestudiante, [FromBody] string nuevo_nombre)
         {
             try
             {
-                var resultado = _estudiantesController.ActualizarEstudiante(estudiante);
+                var resultado = _estudiantesController.ActualizarNombreEstudiante(idestudiante, nuevo_nombre);
 
                 if (resultado.exito)
                     return Ok(new { mensaje = resultado.mensaje });
